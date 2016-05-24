@@ -1,4 +1,7 @@
 export default {
+  admin: {
+    reg: /^admin/
+  },
   about: { 
     reg: /^about/ //命中 about 模块的正则
   },
