@@ -4,13 +4,19 @@
  */
 export default {
   //key: value
+  host: "127.0.0.1", // 限制仅内网访问
   port: 9090,
   timeout: 120, //超时时间,
   route_on: true, // 开启路由解析
   //default_module: "home", // 默认模块
   deny_module_list: [], // 禁用模块
   pathname_prefix: "",  //pathname 去除的前缀，路由解析中使用
-  pathname_suffix: ".html" //pathname 去除的后缀，路由解析中使用
+  pathname_suffix: ".html", //pathname 去除的后缀，路由解析中使用
+  subdomain: {
+    admin: "admin" //表示将 admin.example.com 映射到 admin 模块下
+  },
+  resource_on: true, //是否开启静态资源解析功能
+  resource_reg: /^(static\/|[^\/]+\.(?!js|html)\w+$)/ //判断为静态资源请求的正则
 };
 
 //!
