@@ -1,0 +1,16 @@
+{
+  "apps": [{
+    "name": "ts-es6",
+    "script": "www/production.js",
+    "cwd": "d:/FX/home/wwwroot/root/node2/www-ts/ts-es6",
+    "exec_mode": "cluster",
+    "instances": 0,
+    "max_memory_restart": "1G",
+    "autorestart": true,
+    "node_args": [],
+    "args": [],
+    "env": {
+      
+    }
+  }]
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  index page
+  <% if(controller.navType == "home") {%>
+    <br><strong>Home</strong>
+    <br>
+    <% think.http %>
+  <%} else {%>
+    <br><strong>其它目录</strong>
+  <%}%>
+</body>
+</html>
+
